@@ -13,7 +13,7 @@ Method : **[POST]**
 Route :
 **/v1/create-testimonial**
 
-Data required to get all datas :
+Data required to create testimonials :
 
 | Field     | Data Type | Required | Description                                     |
 | --------- | --------- | -------- | ----------------------------------------------- |
