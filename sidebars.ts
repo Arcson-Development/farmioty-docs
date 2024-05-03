@@ -37,6 +37,21 @@ const sidebars: SidebarsConfig = {
         "landing/news_articles/delete_news_articles",
       ],
     },
+    {
+      type: "category",
+      label: "Contact Us",
+      items: [
+        "landing/contact_us/create_contact_us",
+        "landing/contact_us/get_contact_us",
+      ],
+    },
+    {
+      type: "category",
+      label: "Socials",
+      items: [
+        "landing/socials/get_single_socials",
+      ],
+    },
   ],
 };
 
