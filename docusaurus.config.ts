@@ -70,6 +70,12 @@ const config: Config = {
           position: "left",
           label: "Landing Page API",
         },
+        {
+          type: "docSidebar",
+          sidebarId: "mobileApi",
+          position: "left",
+          label: "Mobile API",
+        },
       ],
     },
     footer: {

@@ -48,8 +48,18 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Socials",
+      items: ["landing/socials/get_single_socials"],
+    },
+  ],
+  mobileApi: [
+    {
+      type: "category",
+      label: "Hama",
       items: [
-        "landing/socials/get_single_socials",
+        "home_petani/hama/post_hama",
+        "home_petani/hama/get_hama",
+        "home_petani/hama/get_single_hama",
+        "home_petani/hama/delete_hama",
       ],
     },
   ],
