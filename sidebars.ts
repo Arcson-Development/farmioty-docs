@@ -55,12 +55,12 @@ const sidebars: SidebarsConfig = {
   mobileApi: [
     {
       type: "category",
-      label: "Hama",
+      label: "Auth",
       items: [
-        "home_petani/hama/post_hama",
-        "home_petani/hama/get_hama",
-        "home_petani/hama/get_single_hama",
-        "home_petani/hama/delete_hama",
+        "auth/sign_up_role1",
+        "auth/sign_up_role2",
+        "auth/sign_up_role3",
+        "auth/sign_up_role4",
       ],
     },
     {
@@ -74,6 +74,16 @@ const sidebars: SidebarsConfig = {
         "home_petani/coupon/coupon_status_to_expired",
         "home_petani/coupon/update_coupon",
         "home_petani/coupon/delete_coupon",
+      ],
+    },
+    {
+      type: "category",
+      label: "Hama",
+      items: [
+        "home_petani/hama/post_hama",
+        "home_petani/hama/get_hama",
+        "home_petani/hama/get_single_hama",
+        "home_petani/hama/delete_hama",
       ],
     },
   ],
