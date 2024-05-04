@@ -1,19 +1,21 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 ---
 
-# Delete Hama
+# Delete Coupon
 
 For Petani / Individu
 
-## Delete Hama
+**coupon_status for expired is 2**
+
+## Delete Coupon By ID
 
 Method : **[DELETE]**
 
 Route :
-**/v1/hama/:id**
+**/v1/delete-coupon/:id**
 
-Data required to delete data :
+Data required to delete coupon by id :
 
 ```
 id: params
@@ -27,7 +29,7 @@ Authorization: Bearer ...token...
 
 ```json
 curl
---location --request DELETE 'localhost:8000/v1/delete-hama/3' \
+--location --request DELETE 'localhost:8000/v1/delete-coupon/4' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJfaWQiOjcsInVzZXJuYW1lIjoiZmFyZGhhbjIiLCJwYXNzd29yZCI6IiQyYiQxMCRPalBXOGRDYW15L2JmSEFwamo1ZC4uUXJEdzU3czBRYUR1U3hVa0JnRTBleTJZLzNYWjRDYSIsIm5vX3RlbHAiOiIxMjM0NTY3ODkwMTIifSwiaWF0IjoxNzE0NzMyODkzLCJleHAiOjE3MTQ4MTkyOTN9.EBtcOes4b3RVgpwhkATHlE9bI1muOA1Tl8GAH5YerIc'
 ```
 
@@ -38,19 +40,19 @@ curl
 ```json
 {
   "status": 200,
-  "message": "Successfully Delete Hama With ID: 3",
+  "message": "Successfully Delete Coupon With ID: 4",
   "error": false
 }
 ```
 
-### Error Response - Prisma
+### Error Response - Not Found
 
 If the id is not found
 
 ```json
 {
   "status": 400,
-  "message": "Something went wrong -> PrismaClientKnownRequestError: \nInvalid `.delete()` invocation in\n/home/fardhan/Code/farmioty/farmioty-be/src/service/home_petani/hama.service.ts:152:16\n\n  149 \n  150 try {\n  151   await prisma.i_hama\n→ 152     .delete(\nAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.",
+  "message": "PrismaClientKnownRequestError: \nInvalid `.delete()` invocation in\n/home/fardhan/Code/farmioty/farmioty-be/src/service/home_petani/coupon.service.ts:296:16\n\n  293 \n  294 try {\n  295   await prisma.i_coupon\n→ 296     .delete(\nAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.",
   "error": true
 }
 ```

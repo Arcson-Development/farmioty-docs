@@ -13,6 +13,12 @@ Method : **[GET]**
 Route :
 **/v1/hama**
 
+Data required to get data :
+
+```json
+Authorization: Bearer ...token...
+```
+
 ### CURL Example
 
 ```json

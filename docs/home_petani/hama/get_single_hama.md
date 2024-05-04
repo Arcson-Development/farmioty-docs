@@ -19,6 +19,10 @@ Data required to get data :
 id: params
 ```
 
+```json
+Authorization: Bearer ...token...
+```
+
 ### CURL Example
 
 ```json

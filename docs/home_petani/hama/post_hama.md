@@ -73,7 +73,7 @@ curl
 ```json
 {
 "status": 401,
-"message": "Unauthorized",
+"message": "Token Not Found",
 "error": true
 }
 ```

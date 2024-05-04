@@ -51,6 +51,7 @@ const sidebars: SidebarsConfig = {
       items: ["landing/socials/get_single_socials"],
     },
   ],
+
   mobileApi: [
     {
       type: "category",
@@ -60,6 +61,19 @@ const sidebars: SidebarsConfig = {
         "home_petani/hama/get_hama",
         "home_petani/hama/get_single_hama",
         "home_petani/hama/delete_hama",
+      ],
+    },
+    {
+      type: "category",
+      label: "Coupon",
+      items: [
+        "home_petani/coupon/generate_coupon",
+        "home_petani/coupon/get_all_coupon",
+        "home_petani/coupon/get_single_coupon",
+        "home_petani/coupon/coupon_status_to_active",
+        "home_petani/coupon/coupon_status_to_expired",
+        "home_petani/coupon/update_coupon",
+        "home_petani/coupon/delete_coupon",
       ],
     },
   ],
