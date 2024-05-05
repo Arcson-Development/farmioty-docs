@@ -61,6 +61,8 @@ const sidebars: SidebarsConfig = {
         "auth/sign_up_role2",
         "auth/sign_up_role3",
         "auth/sign_up_role4",
+        "auth/sign_in",
+        "auth/get_profile",
       ],
     },
     {

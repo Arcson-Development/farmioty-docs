@@ -87,12 +87,23 @@ curl
 
 ```json
 {
-    "status": 400,
-    "message": "Email cannot be empty",
-    "error": true
+  "status": 400,
+  "message": "Email cannot be empty",
+  "error": true
 }
 ```
 
+### Error Response - Email Validation
+
+Email must be a valid email address
+
+```json
+{
+  "status": 400,
+  "message": "Email must be a valid email",
+  "error": true
+}
+```
 
 ### Error Response - Similar Username
 
